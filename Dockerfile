@@ -1,5 +1,5 @@
-FROM golang:latest
+FROM scratch
 
-COPY . /go/Codes/
+COPY hello /
 
-CMD go run Codes/hello.go
+CMD ["/hello"]
